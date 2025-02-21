@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: openface
+Version: 0.0.0
+Summary: openface is a Python API of OpenFace, https://github.com/TadasBaltrusaitis/OpenFace
+Author-email: Guillaume Rochette <guillaume.rochette@unil.ch>
+Project-URL: homepage, https://github.com/GuillaumeRochette/openface
+Project-URL: documentation, https://github.com/GuillaumeRochette/openface
+Project-URL: repository, https://github.com/GuillaumeRochette/openface
+Keywords: TODO
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: Free for non-commercial use
+Classifier: License :: Free For Educational Use
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
