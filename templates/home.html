@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Face Recognition</title>
+        <link href="https://font.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Open Sans', sans-serif;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:0;
+                padding:0;
+                font-family: Arial, Helvetica, sans-serif;
+                  background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+            }
+            .hero{
+                width:80%;
+                margin: auto;
+            }
+            .left-column{
+                flex-basis: 50%;
+            }
+            .left-column h1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 65px;
+                text-align: center;
+            }
+            .left-column h3{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                text-align: center;
+            }
+            span{
+                color: #f14a60;
+            }
+            .left-column p{
+                font-size: 14px;
+                color: white;
+                margin: 50px auto;
+                text-align: center;
+                max-width: 700px;
+            }
+            .btn{
+                margin: 0 auto 50px auto;
+                text-align: center;
+            }
+            .btn button{
+                padding: 7px 30px;
+                margin-left: 15px;
+                outline: none;
+                border: 1px solid #fb7381;
+                border-radius: 20px;
+                cursor: pointer;
+                color: #fb7381;
+                background: transparent;
+            }
+            .btn .primary-btn{
+                background: linear-gradient(#fb7381, #f14a60);
+                box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="banner">
+                <div class="left-column">
+                    <h1>Face<span> Recognition</span></h1>
+                    <h3>Recognize anyone <span>on the live camera</span></h3>
+                    <p>
+                        Live streaming face recognition is a technology that analyzes video streams in real-time to identify and track human faces.
+                        It utilizes computer vision algorithms to detect facial features such as eyes, nose, and mouth.
+                        Through machine learning, it learns to recognize individuals based on their unique facial characteristics.
+                        The process involves capturing frames from the video feed, extracting facial features, and comparing them with a database of known faces.
+                        This technology has various applications, including security surveillance, access control, and personalized advertising.
+                        It requires robust hardware for efficient processing and can operate on both local devices and cloud servers.
+                        Privacy concerns arise due to the potential for unauthorized surveillance and data misuse, necessitating strict regulations and ethical considerations.
+                        Integration with other technologies like object detection and behavior analysis enhances its capabilities for comprehensive video surveillance</p>
+                    <div class="btn">
+                        <button type="button" onclick="window.location.href='/index'">Recognize Face</button>
+                        <button type="button" onclick="window.location.href='/upload'">Upload Image</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

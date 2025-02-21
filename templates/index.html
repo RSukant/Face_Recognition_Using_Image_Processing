@@ -1,0 +1,95 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(64, 61, 61);
+            color: #fff;
+        }
+
+        .container {
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .video-container {
+            width: 65%;
+            height: 60%;
+            position: relative;
+            background-color: rgb(64, 61, 61);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .video-container img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            border-radius: 20px; /* added border radius */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* CSS code to position buttons at left bottom and right bottom */
+        /* CSS code to position buttons at left bottom and right bottom */
+        .button-left-bottom {
+            position: fixed;
+            bottom: 50px; /* Adjust as needed */
+            left: 80px; /* Adjust as needed */
+        }
+
+        .button-right-bottom {
+            position: fixed;
+            bottom: 50px; /* Adjust as needed */
+            right: 80px; /* Adjust as needed */
+        }
+
+        /* CSS code for button styling */
+        .btn {
+            margin: 0 auto 50px auto;
+            text-align: center;
+        }
+
+        .btn button {
+            padding: 7px 30px;
+            margin-left: 15px;
+            outline: none;
+            border: 1px solid #fb7381;
+            border-radius: 20px;
+            cursor: pointer;
+            color: #fb7381;
+            background: transparent;
+        }
+
+        .btn .primary-btn {
+            background: linear-gradient(#fb7381, #f14a60);
+            box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="Live Streaming">
+            <h1>Face Recognition Live Streaming</h1>
+            <div class="btn">
+                <button class="button button-left-bottom" onclick="window.location.href='/upload'">Upload page</button>
+                <button class="button button-right-bottom" onclick="window.location.href='/home'">Home page</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
