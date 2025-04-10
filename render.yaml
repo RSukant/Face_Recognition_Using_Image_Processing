@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: face-recognition-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: MYSQL_HOST
+        value: your-db-hostname
+      - key: MYSQL_USER
+        value: your-db-username
+      - key: MYSQL_PASSWORD
+        value: your-db-password
+      - key: MYSQL_DB
+        value: face_images
