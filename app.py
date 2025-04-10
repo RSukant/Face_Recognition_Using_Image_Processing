@@ -9,7 +9,7 @@ import dlib
 
 # Initialize Dlib's face detector and facial landmark predictor
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("D:\Projects\Face_Recognition\shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 
 app = Flask(__name__)
