@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Face_Recognition\myenv"
+VIRTUAL_ENV="D:\Projects\Face_Recognition\myenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
